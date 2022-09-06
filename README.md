@@ -9,8 +9,8 @@
 ## Introduction
 
 When using React in our projects, we need to download the actual React code for
-our projects so that we can use it alongside our own JavaScript code. React
-itself is written in JavaScript, and it's an
+our projects so that we can use it alongside our own JavaScript code. 
+React itself is written in JavaScript, and it's an
 [open source library](https://github.com/facebook/react). React itself _also_
 depends on some other open source JavaScript libraries. So how can we use all
 this excellent code ourselves?
@@ -28,6 +28,11 @@ allowing many web developers to use the same code in their own projects.
 To help organize these packages in relation to our own work, we use **npm**,
 which is a [**package manager for Node**][npm-faq]. In this lesson, we will be
 discussing how npm works and why it is useful.
+
+> **Note**: Again, we will be using TypeScript once we start writing React 
+> code ourselves. Recall that TypeScript is a superset of JavaScript that 
+> compiles into JavaScript. By extension, npm and npm packages work just the 
+> same for projects using TypeScript. 
 
 ## The Value of Existing Code
 
@@ -51,7 +56,7 @@ Before we continue, let's make sure your environment is all set to work with
 npm.
 
 npm is automatically installed along with **Node.js**, which should already be
-installed on your system if you've worked through the JavaScript coursework. To
+installed on your system if you've worked through the prework. To
 confirm you have node installed, enter the following into your command line:
 
 ```console
@@ -82,8 +87,8 @@ Okay, we've got it installed. But what is npm exactly?
 ## npm Introduction
 
 As mentioned, npm is a package manager for JavaScript. This means that npm works
-with your JavaScript projects via the command line, allowing you to install
-packages of preexisting code.
+with your JavaScript (and, by extension, TypeScript) projects via the command line, 
+allowing you to install packages of preexisting code.
 
 What sort of code? All kinds! Some packages are quite small, like
 [`is-number`][is-number], a package that has one function: to check if a value
@@ -99,7 +104,7 @@ code.
 
 ## Installing Packages with npm
 
-All JavaScript labs in this course rely on npm packages for their tests. Many
+All JavaScript-based labs in this course rely on npm packages for their tests. Many
 use the [Mocha][mocha] or [Jest][jest] npm packages, which are popular
 JavaScript testing frameworks.
 
@@ -150,7 +155,7 @@ example:
 
 ```json
 {
-  "name": "react-hooks-intro-to-npm-readme",
+  "name": "react-ts-intro-to-npm-readme",
   "version": "1.0.0",
   "description": "An introduction to npm and package.json",
   "main": "index.js",
@@ -162,12 +167,12 @@ example:
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme.git"
+    "url": "git+https://github.com/learn-co-curriculum/react-ts-intro-to-npm-readme.git"
   },
   "author": "flatironschool",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme/issues"
+    "url": "https://github.com/learn-co-curriculum/react-ts-intro-to-npm-readme/issues"
   },
   "homepage": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme#readme"
 }
@@ -178,7 +183,7 @@ present, running `npm test` will return "hot dog."
 
 This lesson actually does include this `package.json` file, so try it for
 yourself! You can access the code for this lesson by clicking the GitHub link at
-the top, or use [this link][lesson repo].
+the top.
 
 This works because the command `npm test` is saying: "Hey npm, look in
 `package.json` and find the script with the name of 'test', then execute it in
@@ -220,7 +225,7 @@ hood'. The applications we build are made possible by the contributions of
 thousands of other coders before us!
 
 **Remember!** While endlessly fun, programming is a means to an end: we (or our
-employer) has a problem, and we give the computer instructions to crush the
+employer) have a problem, and we give the computer instructions to crush the
 problem. If available, open, and secure code already exists do not hesitate to
 use it! Compared to physical goods, code snippets have less value attributed to
 novelty. (There is a reason you won't see "artisanal code" being sold on
@@ -241,5 +246,3 @@ novelty. (There is a reason you won't see "artisanal code" being sold on
 [mocha]: https://mochajs.org/
 [jest]: https://jestjs.io/
 [etsy]: https://etsy.com
-[lesson repo]:
-  https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme
