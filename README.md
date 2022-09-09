@@ -8,12 +8,15 @@
 
 ## Introduction
 
-When using React in our projects, we need to download the actual React code for
-our projects so that we can use it alongside our own JavaScript code. 
-React itself is written in JavaScript, and it's an
-[open source library](https://github.com/facebook/react). React itself _also_
-depends on some other open source JavaScript libraries. So how can we use all
-this excellent code ourselves?
+Before we get started, you may be wondering: why are we starting off this TypeScript
+section with npm? That's a great question. 
+
+When using TypeScript, and later React, in our projects, we need to first download the 
+actual TypeScript and React code for our projects before we can use it. TypeScript 
+is written on top of JavaScript and has tooling that compiles it into JavaScript. 
+React itself is written in JavaScript, and it's an [open source library](https://github.com/facebook/react). 
+React itself _also_ depends on some other open source JavaScript libraries. 
+So how can we use all this excellent code and tooling ourselves?
 
 JavaScript has been around for many years now, and continues to serve as a
 critical part of the modern, interactive web. There are web developers all over
@@ -29,10 +32,9 @@ To help organize these packages in relation to our own work, we use **npm**,
 which is a [**package manager for Node**][npm-faq]. In this lesson, we will be
 discussing how npm works and why it is useful.
 
-> **Note**: Again, we will be using TypeScript once we start writing React 
-> code ourselves. Recall that TypeScript is a superset of JavaScript that 
-> compiles into JavaScript. By extension, npm and npm packages work just the 
-> same for projects using TypeScript. 
+> **Note**: Though we will be writing in TypeScript, it is a 'superset' of JavaScript 
+> that compiles into JavaScript. By extension, npm and npm packages work just the 
+> same for projects originally written with TypeScript. 
 
 ## The Value of Existing Code
 
@@ -217,8 +219,8 @@ edit an existing `package.json` file.
 
 ## Conclusion
 
-For all React lessons, we rely on npm to set up a lot of things 'under the
-hood'. The applications we build are made possible by the contributions of
+We rely on npm to set up a lot of things 'under the hood' for both TypeScript and
+React. The applications we build are made possible by the contributions of
 thousands of other coders before us!
 
 **Remember!** While endlessly fun, programming is a means to an end: we (or our
